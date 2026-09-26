@@ -60,6 +60,7 @@ Since no dataset was provided, the script generates a synthetic dataset with the
 * The results represent patterns in a small simulated dataset and should not be interpreted as evidence of biological causation or clinical prediction.
 
 **Full R script:** [R Script](https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R)
+**Per-patient total expression barplot:** [https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Per-Patient_Total_Expression.png]
 
 ---
 
