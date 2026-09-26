@@ -52,9 +52,8 @@ Since no dataset was provided, the script generates a synthetic dataset with the
 * Interpretation paragraphs
 
   
-Full R script is available here- https://github.com/Gargi28-sketch/BioinformHer-R-Class-Project/blob/e76ed00d48b3150ad1c4bbf4fb5fe36a9f6b0c32/Project%20script.R
+Full R script is available here- [R Script](**https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R**)
 
-A barplot of total expression per patient available here-https://github.com/Gargi28-sketch/BioinformHer-R-Class-Project/blob/d59710c21834838ba8cc76732ff482b3a3152e4a/Bar%20Plot.png
 
 
 ## Notes
