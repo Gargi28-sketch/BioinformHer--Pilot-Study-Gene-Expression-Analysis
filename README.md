@@ -6,7 +6,7 @@ This project performs a simulated analysis of gene expression data for a pilot s
 
 ## Files
 
-* **analysis.R**: Complete R script performing all steps (1–20) of the analysis, including dataset generation, statistical summaries, variance analysis, thresholding, barplots, and automated interpretation.
+* **Script.R**: Complete R script performing all steps (1–20) of the analysis, including dataset generation, statistical summaries, variance analysis, thresholding, barplots, and interpretation.
 
 ## Dataset Generation
 
@@ -15,31 +15,31 @@ Since no dataset was provided, the script generates a synthetic dataset with the
 * 10 patients (`P1`–`P10`)
 * 8 genes (`G1`–`G8`)
 * Random Responder / Non-Responder assignment
-* Gene expression values simulated from a normal distribution with mean = 10, sd = 3
-* Seed is set for reproducibility (`set.seed(123)`)
+* Gene expression values simulated from a normal distribution with mean = 10 and sd = 3
+* Seed is set for reproducibility using `set.seed(123)`
 
 ## Analysis Steps
 
 1. Print dataset structure and gene column summary.
-2. Compute per-gene overall means and identify top 2 highest-mean genes.
+2. Compute per-gene overall means and identify the top 2 highest-mean genes.
 3. Compute Responder vs Non-Responder mean per gene using `tapply()`.
 4. Identify genes with higher expression in Responders.
 5. Compute total expression per patient.
 6. Label patients as HighExpr or LowExpr based on median total expression and count per group.
-7. Identify the patient with the highest total.
-8. Compute per-gene variance and top 2 most variable genes.
-9. Identify patient × gene combination with the highest single value.
-10. Compute per-gene means for Responders and compare to overall means.
+7. Identify the patient with the highest total expression.
+8. Compute per-gene variance and identify the top 2 most variable genes.
+9. Identify the patient × gene combination with the highest single expression value.
+10. Compute per-gene means for Responders and compare them with overall means.
 11. Rename gene G4 to G4A.
 12. Create a gene matrix (`gene_mat`) with rownames as patient IDs.
 13. Compute row and column means and verify consistency with previous results.
-14. Create a list `study` containing the dataframe and gene matrix.
+14. Create a list `study` containing the expression data frame and gene matrix.
 15. Extract G1 expression for Non-Responders from `study`.
-16. Threshold gene matrix: set values < 5 to zero and count changed entries.
-17. Recompute Responder vs Non-Responder means post-threshold.
+16. Threshold the gene matrix by setting values < 5 to zero and count the changed entries.
+17. Recompute Responder vs Non-Responder means after thresholding and compare the conclusions.
 18. Generate a barplot of per-patient total expression.
-19. Remove the patient with lowest total and observe group-level changes.
-20. Print a 2-paragraph interpretation of results automatically to the console.
+19. Remove the patient with the lowest total expression and observe group-level changes.
+20. Print a 2-paragraph interpretation of the results automatically to the console.
 
 ## Output
 
@@ -48,19 +48,23 @@ Since no dataset was provided, the script generates a synthetic dataset with the
 * Gene means and variances
 * Responder vs Non-Responder comparisons
 * Total expression per patient and HighExpr counts
-* Top variable genes and genes higher in Responders
-* Interpretation paragraphs
-
-  
-**Full R script:** [R Script]([https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R](https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R))
-
+* Top variable genes
+* Genes with higher expression in Responders
+* Per-patient total expression barplot
+* Interpretation of the simulated results
 
 ## Notes
+
 * All computations use **base R** functions.
+* The dataset is simulated because no dataset was provided.
+* The results represent patterns in a small simulated dataset and should not be interpreted as evidence of biological causation or clinical prediction.
+
+**Full R script:** [R Script](https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R)
+
 ---
 
 **Author:** Gargi Durbude
 
-**Contact** gauridilip2001@gmail.com
+**Contact:** gauridilip2001@gmail.com
 
 **Purpose:** Pilot study gene expression analysis and summary for coursework submission.
