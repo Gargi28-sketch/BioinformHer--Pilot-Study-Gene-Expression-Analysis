@@ -52,7 +52,7 @@ Since no dataset was provided, the script generates a synthetic dataset with the
 * Interpretation paragraphs
 
   
-**Full R script:** [R Script](https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R)
+**Full R script:** [R Script]([https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R](https://github.com/Gargi28-sketch/BioinformHer--Pilot-Study-Gene-Expression-Analysis/blob/2d346e4543da1fae510cdb544c42fc1f62142241/Script.R))
 
 
 ## Notes
